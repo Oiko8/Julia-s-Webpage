@@ -1,0 +1,61 @@
+/* src/styles/tokens.css */
+/* Design tokens — the single source of truth for color, type, and spacing.
+   Change a value here once and it updates across the whole site. */
+
+:root {
+  /* ---- Color ---------------------------------------------------- */
+  /* Warm paper canvas */
+  --color-paper:      #F5EDE1;  /* page background */
+  --color-paper-deep: #EFE3D2;  /* raised sections / cards */
+  --color-paper-edge: #E4D5C0;  /* hairline borders on paper */
+
+  /* Ink (warm near-black, never pure #000) */
+  --color-ink:      #2B2420;  /* primary text */
+  --color-ink-soft: #6F6055;  /* secondary text, captions */
+
+  /* Warm accents */
+  --color-coral:  #E9806E;  /* primary accent — links, buttons */
+  --color-orange: #EBA05C;  /* secondary warm — highlights, tags */
+  --color-clay:   #B8543C;  /* deep accent — hover, emphasis on paper */
+
+  /* ---- Type ----------------------------------------------------- */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body:    "Hanken Grotesk", system-ui, sans-serif;
+
+  /* Type scale — hero and page titles scale with the viewport */
+  --step-hero:  clamp(3rem, 8vw, 6rem);    /* her name in the hero */
+  --step-1:     clamp(2rem, 4.5vw, 3rem);  /* page titles */
+  --step-2:     1.5rem;                    /* section headings */
+  --step-3:     1.125rem;                  /* lead paragraphs */
+  --step-body:  1rem;
+  --step-small: 0.875rem;                  /* captions, labels */
+
+  --leading-tight: 1.1;
+  --leading-body:  1.6;
+  --tracking-wide: 0.08em;   /* eyebrows / uppercase labels */
+
+  /* ---- Space (8px-based scale) ---------------------------------- */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+
+  /* ---- Layout --------------------------------------------------- */
+  --measure:     68ch;    /* comfortable reading width for paragraphs */
+  --page-max:    1200px;  /* max content width */
+  --page-gutter: clamp(1.25rem, 5vw, 4rem);
+
+  /* ---- Radius / borders / shadow -------------------------------- */
+  --radius-sm: 6px;
+  --radius:    12px;
+  --radius-lg: 20px;
+  --hairline:  1px solid var(--color-paper-edge);
+  --shadow-soft: 0 12px 30px rgba(43, 36, 32, 0.10);
+
+  /* ---- Motion --------------------------------------------------- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur:  200ms;
+}
